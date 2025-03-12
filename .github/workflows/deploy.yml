@@ -48,4 +48,4 @@ jobs:
         script: |
           docker stop loja
           docker rm --force loja
-          docker run -d -p 8081:8081 --name usuario --network=rede pedrofardin/loja-ci:${{ github.sha }}
+          docker run -d -p 8081:8081 --name loja --network=rede pedrofardin/loja-ci:${{ github.sha }}
